@@ -1,0 +1,34 @@
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  margin: 20px;
+  border: 10px solid green;
+  padding: 50px;
+  color: darkblue;
+}
+h1 {
+  font-family: "Noto Serif KR", serif;
+  color: green;
+}
+
+/* p {
+  color: orange;
+}
+
+.likelion {
+  color: gray;
+}
+
+#school {
+  color: red;
+} */
+@layer techit, likelion;
+@layer likelion {
+  p {
+    color: red;
+  }
+}
+@layer techit {
+  p {
+    color: green;
+  }
+}
