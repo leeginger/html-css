@@ -1,0 +1,7 @@
+/* 본문 영역을 선택한 후 글자 크기와 글자 색상을 지정 */
+body {
+  font-size: 1rem;
+  color: green;
+  /* font-family: "Noto Serif", serif; */
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+} /*sans-serif는 고딕느낌, serif는 날카롭고 삐침이 있는 모양. serif 명시 이유는 noto serif가 안되면 serif로 대체명시*/
