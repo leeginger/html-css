@@ -1,8 +1,21 @@
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
 /*전체 선택자*/
 * {
   color: orange;
 }
+body * {
+  color: violet;
+}
 /*요소 선택자*/
+html {
+  /*기본글자크기 -> 16px*/
+  /**/
+  font-size: 0.625em;
+}
 p {
   color: blue;
 }
@@ -17,4 +30,48 @@ p {
 /*속성 선택자*/
 [title] {
   color: pink;
+}
+/*자손 결합 선택자*/
+p span {
+  color: skyblue;
+}
+/*자식 선택자*/
+p > span {
+  text-decoration: underline;
+}
+/*가상 요소*/
+h1::before {
+  content: "첫번째 자식 요소";
+}
+h1::after {
+  content: "마지막 자식 요소";
+}
+p::first-letter {
+  font-size: 3.5rem;
+}
+::selection {
+  background-color: darkblue;
+  color: #fff;
+}
+/*가상 클래스*/
+:root {
+  font-size: 0.75em;
+}
+/*가상 클래스를 이용한 선택자 그룹화*/
+/* :is(h1, h2, h3, h4, h5, h6) span {
+  background-color: salmon;
+  color: blue;
+} */
+:where(h1, h2, h3, h4, h5, h6) span {
+  background-color: lightgreen;
+  color: red;
+}
+
+h6:has(+ p) {
+  border: solid 1px green;
+  padding: 10px;
+}
+p:has(strong) {
+  border: 1px solid red;
+  padding: 10px;
 }
