@@ -1,0 +1,19 @@
+@import "./../../common/mordern-reset.css";
+@import "./../../common/a11y.css";
+@import "./../../common/theme.css";
+@import "./../../common/base.css";
+@import "./../../components/thumbnail-card.css";
+
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+}
+
+.table-styling {
+  width: 710px;
+  border-top: 3px solid #24388d;
+
+  thead tr th {
+    font-size: 14px;
+    color: #24388d;
+  }
+}

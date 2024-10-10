@@ -1,0 +1,29 @@
+@import "./../../common/best-rest.css";
+
+.scroll-wrapper {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  block-size: 100vh;
+  overflow-y: auto;
+}
+
+section {
+  width: 100%;
+  inline-size: 100%;
+  height: 100vh;
+  block-size: 100vh;
+  scroll-snap-align: start;
+}
+
+.section-01 {
+  background-color: yellow;
+}
+.section-02 {
+  background-color: rgb(29, 46, 155);
+}
+.section-03 {
+  background-color: rgb(199, 52, 194);
+}
+.section-04 {
+  background-color: rgb(28, 172, 52);
+}

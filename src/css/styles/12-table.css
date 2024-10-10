@@ -1,0 +1,54 @@
+@import "./../../common/mordern-reset.css";
+
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  margin: 50px;
+}
+
+/*테이블 스타일링*/
+.table-wrapper {
+  block-size: 625px;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+.table-styling {
+  table-layout: fixed;
+  border: 1px solid currentColor;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  inline-size: 100%;
+
+  .number {
+    inline-size: 10%;
+  }
+  .name {
+    inline-size: 20%;
+  }
+  .email {
+    inline-size: 40%;
+  }
+  .phone {
+    inline-size: 30%;
+  }
+
+  thead {
+    background-color: burlywood;
+    position: sticky;
+    top: 1px;
+    inset-block-start: 1px;
+  }
+
+  thead,
+  th,
+  td {
+    border: 1px solid currentColor;
+    padding: 1em; /*현재 글자 기준을 따라가게됨. 글자가 커지면 여백도 같이 커짐 반응형때 필요*/
+  }
+  tbody tr:nth-child(even) td {
+    background-color: silver;
+  }
+  tbody tr {
+    scroll-snap-align: start;
+  }
+}
