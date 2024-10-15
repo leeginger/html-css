@@ -1,0 +1,39 @@
+@import "./../../common/base.css";
+@import "./../../common/a11y.css";
+@import "./07-form-login.css";
+
+.container {
+  padding: 0 1.25rem;
+
+  .brand {
+    inline-size: 14.375rem;
+    margin-inline: auto;
+    margin-block-end: 4.375rem 2.8125rem;
+
+    @media (min-width: 48rem) {
+      margin-block: 6.25rem 3.125rem;
+    }
+  }
+
+  .login-form {
+    background-color: pink;
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media (min-width: 48rem) {
+      inline-size: 31.25rem;
+      padding: 0 1.25rem;
+      margin-inline: auto;
+    }
+
+    .flex-wrapper {
+      order: 1;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    button {
+      margin-block-start: 0.625rem;
+    }
+  }
+}
