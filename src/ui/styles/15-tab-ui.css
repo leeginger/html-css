@@ -1,0 +1,73 @@
+@import "./../../common/mordern-reset.css";
+@import "./../../common/base.css";
+
+/*Tab UI*/
+.tab-container {
+  margin-block: 1rem;
+  inline-size: 380px;
+  background-color: #eee;
+  position: relative;
+}
+
+.tab-list {
+  button {
+    background-color: #ccc;
+    border-top: 1px solid #a3a3a3;
+    border-left: 1px solid #a3a3a3;
+    border-right: 1px solid #a3a3a3;
+    border-bottom: none;
+    block-size: 37px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  & .tab-on {
+    border-top: 1px solid #ed552f;
+    border-left: 1px solid #ed552f;
+    border-right: 1px solid #ed552f;
+    background-color: var(--white);
+  }
+}
+
+.tab-panel {
+  padding-block-start: 16px;
+
+  ul li {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: #181818;
+      font-size: 14px;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+      .fa-circle-dot {
+        padding-inline-end: 7px;
+      }
+    }
+
+    time {
+      font-size: 14px;
+    }
+
+    & + li {
+      margin-top: 12px;
+    }
+  }
+}
+
+.more-button {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  font-size: 14px;
+  color: var(--black);
+  text-decoration: none;
+
+  .fa-plus {
+    color: #447231;
+    font-weight: bold;
+  }
+}

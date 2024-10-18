@@ -9,6 +9,11 @@
   img {
     aspect-ratio: 1 / 0.67;
     object-fit: cover;
+    filter: sepia();
+
+    &:hover {
+      filter: none;
+    }
   }
 
   figcaption {
@@ -20,6 +25,12 @@
     inset-inline: 1rem;
     inset-block-end: 1rem;
     white-space: nowrap;
-    pointer-events: none;
+    pointer-events: none; /*UI만들때 중요*/
   }
+}
+
+.masonry-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
